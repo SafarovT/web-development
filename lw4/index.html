@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet" />
+    <title>My Page</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="back"></div>     
+      <div class="content_frame">
+        <h1>Про меня</h1>
+        <div class="info_container">
+          <div class="info">
+            <h2>Немного про меня</h2>
+            <p> Меня зовут <b>Сафаров Тахир</b>, я учусь в Инфотехе уже 3-ий год,
+            надеюсь не последний. html вместе с css я более менее изучал летом, было скучно.
+            Другого не придумал.</p>
+            <h3>Какие-то факты</h3>
+            <p>Я:</p>
+            <ul>
+              <li>Ленивый</li>
+              <li>Умный(нет)</li>
+              <li>Но ленивый</li>
+            </ul>
+            <p>У меня есть 2 кота:</p>
+            <ol>
+              <li>Кот</li>
+              <li>Кошка</li>
+            </ol>
+          </div>
+          <div class="photo">
+            <h2>Мое фото(не точно)</h2>
+            <img src="images/Me.png" alt="Мое фото" />
+          </div>
+        </div>
+        <h2>Цитата А.И.</h2>
+        <blockquote>Какой частный случай? Больше на несчастный похоже</blockquote>
+        <hr/>
+        <p>Оцените мой сайт: </p>
+        <form action="https://vk.com/loveinfotech" method="POST" autocomplete="off">
+          <label> Ваше имя: </label> 
+          <input type="text" name="Ваше имя" placeholder="name" required /> <br />
+          <label> Ваш email: </label>
+          <input type="text" name="Ваше имя" placeholder="email@example.com" required /> <br />
+          <input type="checkbox" name="good" value="1" /> Хорошо <br />
+          <input type="checkbox" name="very_good" value="2" /> Очень хорошо <br />
+          <input type="checkbox" name="amazing" value="3" /> Замечательно <br />
+          <label> Ваш любимый цвет: </label>
+          <input type="text" name="favorite_color" list="colors" />
+          <datalist id="colors">
+            <option value="Красный"></option>
+            <option value="Синий"></option>
+            <option value="Желтый"></option>
+          </datalist>
+          <br>
+          <input type="submit" name="Send" class='button' />
+      </form>
+      </div>    
+    </div>
+  </body>
+</html>
