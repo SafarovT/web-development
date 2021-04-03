@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/enr3has.css">
+        <title>My Page</title>
+    </head>
+    <body class="body">
+        <div class="main-container">
+          <div class="main">
+            <div class="left-container">
+              <div class="photo-container">
+                <img src="photo/my_photo.jpg" alt="Photo of me" class="photo-container__image"/>
+              </div>
+              <div class="info-lists">
+                <h3 class="info-lists__title">Любимые писатели: </h3>
+                <ul class="info-lists__list-unordered">
+                  <li class="info-lists__element">И. А. Гончаров</li>
+                  <li class="info-lists__element">А. С. Пушкин</li>
+                  <li class="info-lists__element">Дора - дура</li>
+                  <li class="info-lists__element">Жак Фреско</li>
+                </ul>
+                <h3 class="info-lists__title">Любимые фильмы: </h3>
+                <ol class="info-lists__list-ordered">
+                  <li class="info-lists__element">Лекции по дискретке</li>
+                  <li class="info-lists__element">Лекции по основам</li>
+                  <li class="info-lists__element">Смешарики</li>
+                  <li class="info-lists__element">K-on!!</li>
+                </ol>
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="quote-container">
+                <img src="photo/quotes.png" alt="Quotes image" class="quote-container__image"/>
+                <div class="quote">
+                  <blockquote class="quote__content">Какой частный случай? Больше на несчастный похоже</blockquote>
+                  <p class="quote__owner">— Александр Иванович. Алгебра</p>
+                </div>
+              </div>
+              <div class="text-container">
+                <h1 class="main-title">Сафаров Тахир</h1>
+                <p class="text-container__text">Я учусь в Инфотехе уже третий год. Мне здесь нравится.
+                  Дописываю этот сайт поздней ночью, не знаю еще написать.
+                  У меня есть две кошки: кот и кошка. Я их люблю.
+                </p>
+                <h2 class="sub-title">Мое хобби</h2>  
+                <p class="text-container__text_sub">Я люблю делать веб. Люблю решать лабы по проге. Люблю 
+                  ходить на лекции, особенно после качалки. Люблю pascal.
+                  Не люблю писать такие тексты.
+                </p>
+                <a class="link"><span class="link__line-under">Напиши мне</span> →</a>
+              </div>   
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
