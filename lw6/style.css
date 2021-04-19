@@ -1,10 +1,10 @@
 .body
 {
     margin: 0;
-    font: 300 19px Georgia, serif;
+	font: 300 19px 'Georgia', serif;
     color: #555;
 	
-    display: flex;
+	display: flex;
     align-items: center;
     align-content: center; 
     justify-content: center; 
@@ -12,11 +12,10 @@
 
 .main-container 
 {
-    display: flex;
+	display: flex;
     align-items: center; 
     justify-content: flex-start;
     flex-direction: column;
-    height: 700px;
     width: 100%;
 }
 
@@ -36,44 +35,72 @@
     height: inherit;
     background-color: white;
 	
-    font: 19px Georgia, 'Times New Roman', Times, serif;
+	font: 19px 'Georgia', 'Times New Roman', Times, serif;
 	
     padding: 0 21px;
     color: #333;
     text-indent: 10px;
 }
 
-.header__button_about
+.header__button:hover
 {
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: inherit;
     background-color: #15a98c;
-	
-    font: 19px Georgia, 'Times New Roman', Times, serif;
-    padding: 0 21px;
-    color: #333;
-    text-indent: 10px;
+	color: white;
 }
 
-.header__button__text_about 
+.header__button__image_first
 {
-    color: white;
+	width: 14px;
+	height: 16px;
+	background: url('photo/person.png') no-repeat;
+}
+
+.header__button:hover .header__button__image_first
+{
+	background: url('photo/person_white.png');
+}
+
+.header__button__image_second
+{
+	width: 16px;
+	height: 16px;
+	background: url('photo/heart.png') no-repeat;
+}
+
+.header__button:hover .header__button__image_second
+{
+	width: 16px;
+	height: 16px;
+	background: url('photo/heart_white.png');
+}
+
+.header__button__image_third
+{
+	width: 16px;
+	height: 14px;
+	background: url('photo/film.png') no-repeat;
+}
+
+.header__button:hover .header__button__image_third
+{
+	width: 16px;
+	height: 14px;
+	background: url('photo/film_white.png');
 }
 
 .main-container__image
 {
     display: block;
     position: relative;
-    height: 400px;
+    width: 98.999vw;
+    height: 21vh;
     
     z-index: -1;
 }
 
 .main-title 
 {
-    font: bold 48px 'Open Sans', sans-serif;
+	font: bold 48px 'Open Sans', sans-serif;
 	
     text-indent: 3px;
     color: #333;
@@ -81,64 +108,64 @@
 
 .main-title:after
 {
-    content: " ";
-    display: block;
-    width: 60px;
-    height: 6px;
-    background: #45c3aa;
-    border-radius: 10px;
-    margin-top: 20px;
+	content: " ";
+	display: block;
+	width: 60px;
+	height: 6px;
+	background: #45c3aa;
+	border-radius: 10px;
+	margin-top: 20px;
 }
 
 .section-title
 {
-    font: 300 36px 'Open Sans', sans-serif;
-    color: #333;
-    text-transform: uppercase;
-    margin: 101px 10px 0 0;
+	font: 300 36px 'Open Sans', sans-serif;
+	color: #333;
+	text-transform: uppercase;
+	margin: 101px 10px 0 0;
 }
 
 .section-title:after
 {
-    content: " ";
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    background: #c4c4c4;
-    border-radius: 10px;
-    margin: 0 0 12px 31px;
+	content: " ";
+	display: inline-block;
+	width: 200px;
+	height: 1px;
+	background: #c4c4c4;
+	border-radius: 10px;
+	margin: 0 0 12px 31px;
 }
 
 .section-title:before
 {
-    content: " ";
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    background: #c4c4c4;
-    margin-right: 31px;
-    margin: 0 31px 12px 0;
+	content: " ";
+	display: inline-block;
+	width: 200px;
+	height: 1px;
+	background: #c4c4c4;
+	margin-right: 31px;
+	margin: 0 31px 12px 0;
 }
 
 .sub-title
 {
-    font: 400 36px/0 'Open Sans', sans-serif;
+	font: 400 36px/0 'Open Sans', sans-serif;
     color: #333;
-    margin: 44px 0 30px -1px;
-    letter-spacing: 0px;
+	margin: 44px 0 30px -1px;
+	letter-spacing: 0px;
 }
 
 .nametage-title
 {
-    font: bold 22px/0 'Open Sans', sans-serif;
+	font: bold 22px/0 'Open Sans', sans-serif;
 	
-    margin: 39px 0 30px -3px;
+	margin: 39px 0 30px -3px;
     color: #333;
 }
 
 .info-lists__title
 {
-    font: 600 24px "Open Sans", sans-serif;
+	font: 600 24px "Open Sans", sans-serif;
     color: #15a98b;
     padding-left: 18px;
 }
@@ -157,19 +184,19 @@
 .main
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 
     height: auto;
     width: 960px;
 	
-    margin: -190px 20px 0;
+	margin: -190px 20px 0;
 }
 
 .left-container
 {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
 
     width: 330px;
     height: inherit;
@@ -178,7 +205,7 @@
 .right-container
 {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
 
     width: 570px;
     height: inherit;
@@ -197,14 +224,14 @@
     height: inherit;
     object-fit: cover;
 
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .info-lists
 {
     display: flex;
-    flex-direction: column;
-    margin: 20px 0 0 -18px;
+	flex-direction: column;
+	margin: 20px 0 0 -18px;
 
     width: 100%;
     height: auto;
@@ -212,16 +239,16 @@
 
 .info-lists__element
 {
-    line-height: 36px;
+	line-height: 36px;
 }
 
 .info-lists__list-unordered
 {
-    margin: -11px 0 16px 0;
+	margin: -11px 0 16px 0;
 }
 .info-lists__list-ordered
 {
-    margin: -12px 0 0 -2px;
+	margin: -12px 0 0 -2px;
 }
 
 .quote-container
@@ -234,7 +261,7 @@
 {
     display: block;
     text-indent: 40px;
-    margin: -3px 0 0 -37px;
+	margin: -3px 0 0 -37px;
     color: white;
 }
 
@@ -243,19 +270,19 @@
     font-style: italic;
     font-size: 28px;
     text-indent: 0;
-    line-height: 42px;
+	line-height: 42px;
 }
 
 .quote__owner
 {
-    font: 600 16px/0 'Open Sans', sans-serif;
-    margin: -5px 0 0 3px;
+	font: 600 16px/0 'Open Sans', sans-serif;
+	margin: -5px 0 0 3px;
 }
 
 .text-container
 {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
     margin-top: -109px;
 
     width: 100%;
@@ -264,20 +291,20 @@
 
 .text-container__text
 {
-    margin-top: 12px;
-    line-height: 32px;
+	margin-top: 12px;
+	line-height: 32px;
 }
 
 .text-container__text_sub
 {
-    margin-top: 6px;
-    line-height: 32px;
+	margin-top: 6px;
+	line-height: 32px;
 }
 
 .link
 {
     color: #15a98b;
-    line-height: 76px;
+	line-height: 76px;
 }
 
 .sub-container
@@ -311,7 +338,7 @@
 }
 .sub-content__block__text
 {
-    font: 16px Georgia, serif;
+	font: 16px 'Georgia', serif;
     margin-top: 3px;
     line-height: 28px;
     text-indent: 0;
@@ -336,7 +363,7 @@
 
 .sub-content__button__text
 {
-    font-family: Georgia, sans-serif;
+    font-family: 'Georgia', sans-serif;
     color: #f5f5f5;  
 }
 
@@ -352,8 +379,8 @@
     height: 44px;
     border: solid 2px #c9c9c9;
     border-radius: 2px;
-    margin: 6px 0 26px 0;
-    font: 18px 'Open Sans', sans-serif;
+	margin: 6px 0 26px 0;
+	font: 18px 'Open Sans', sans-serif;
     text-indent: 17px;
     color: #555;
 }
@@ -370,9 +397,9 @@
     height: 50px;
     border: solid 2px #a6a6a6;
     border-radius: 2px;
-    margin: 5px 0 43px 0;
-    font: 18px 'Open Sans', sans-serif;
-    text-indent: 17px;
+	margin: 5px 0 43px 0;
+	font: 18px 'Open Sans', sans-serif;
+    padding-left: 17px;
     color: #555;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -380,12 +407,16 @@
     background: url('photo/arrow.png') no-repeat right;
 }
 
+.main-form__list::-ms-expand
+{
+	display: none;
+}
+
 .main-form__label_list
 {
     margin-left: 0px;
     color: #333;
-    line-indent: 0;
-    font: normal 20px/30px 'Open Sans', sans-serif;
+	font: normal 20px/30px 'Open Sans', sans-serif;
 }
 
 .main-form__list:focus
@@ -396,9 +427,8 @@
 
 .main-for__list__option
 {
-    font: 18px 'Open Sans', sans-serif;
+	font: 18px 'Open Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    text-indent: 17px;
     font-size: 18px;
     color: #777;
 }
@@ -408,23 +438,23 @@
 {
     margin-left: 0px;
     color: #333;
-    font: normal 20px 'Open Sans', sans-serif;
+	font: normal 20px 'Open Sans', sans-serif;
 }
 
 .main-form__radio
 {
-    margin: 17px 3px 47px 0;
+	margin: 17px 3px 46px 1px;
 }
 
 .main-form__radio_second
 {
-    margin: 17px 3px 0 35px;
+	margin: 17px 3px 0 36px;
 }
 
 .main-form__radio__text
 {
     color: #333;
-    font: normal 18px/0 'Open Sans', sans-serif;
+	font: normal 18px/0 'Open Sans', sans-serif;
 }
 
 .main-form__input-field_message
@@ -433,8 +463,8 @@
     height: 144px;
     border: solid 2px #a6a6a6;
     border-radius: 2px;
-    margin: 6px 0 26px 0 ;
-    font: 18px 'Open Sans', sans-serif;
+	margin: 6px 0 26px 0 ;
+	font: 18px 'Open Sans', sans-serif;
     text-indent: 17px;
     color: #555;
 }
@@ -456,7 +486,7 @@
     border-radius: 5px;
     margin-top: 3px;
     border: none;
-    font: 19px Georgia, sans-serif;
+	font: 19px 'Georgia', sans-serif;
     color: #f5f5f5;  
 }
 
@@ -470,7 +500,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 57px 0 0 -20px;
+	margin: 57px 0 0 -20px;
     font-size: 16px;
 }
 
