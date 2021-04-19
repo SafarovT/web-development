@@ -16,16 +16,16 @@
 <body class="body">
   <div class="main-container">
     <header class="header">
-      <div class="header__button_about">
-        <img src="photo/person.png" alt="Me" class="header__button__image" />
+      <div class="header__button">
+		<div class="header__button__image_first"> </div>
         <p class="header__button__text_about">Обо мне</p>
       </div>
       <div class="header__button">
-        <img src="photo/heart.png" alt="What I like" class="header__button__image" />
+		<div class="header__button__image_second"> </div>
         <p class="header__button__text">Мое хобби</p>
       </div>
       <div class="header__button">
-        <img src="photo/film.png" alt="Films" class="header__button__image" />
+		<div class="header__button__image_third"> </div>
         <p class="header__button__text">Любимые фильмы</p>
       </div>
     </header>
@@ -137,14 +137,13 @@
           <option value="Ukraine" class="main-for__list__option">Хохландия</option>
         </select>
       </label>
-      <label class="main-form__label">Ваш пол
-        <br />	
-        <input class="main-form__radio" type="radio" name="sex" value="1" />
-        <span class="main-form__radio__text">Мужской</span>
-		<input class="main-form__radio_second" type="radio" name="sex" value="2" />
-        <span class="main-form__radio__text">Женский</span>
-        <br />
-      </label>
+      <label class="main-form__label">Ваш пол</label>
+      <br />	
+      <input class="main-form__radio" id="man" type="radio" name="sex" value="1" />
+      <label class="main-form__radio__text" for="man">Мужской</label>
+	  <input class="main-form__radio_second" id="woman" type="radio" name="sex" value="2" />
+      <label class="main-form__radio__text" for="woman">Женский</label>
+      <br /> 
       <label class="main-form__label">Ваше сообщение <span class="required">*</span>
         <input class="main-form__input-field_message" type="text" name="Ваше имя" required /> <br />
       </label>
