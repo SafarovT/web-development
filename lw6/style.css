@@ -92,8 +92,9 @@
 {
     display: block;
     position: relative;
-    width: 98.999vw;
-    height: 21vh;
+    background: url('photo/back.png') no-repeat center;
+    width: 100vw;
+    height: 37vh;
     
     z-index: -1;
 }
