@@ -1,8 +1,8 @@
 .body
 {
-    margin: 0 auto;
-    width: 100vw;
+    margin: 0;
     color: #555;
+    font-family: 'Georgia', serif;
 	
 	display: flex;
     align-items: center;
@@ -16,7 +16,8 @@
     align-items: center; 
     justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    max-width: 1920px;
 }
 
 .header
@@ -55,8 +56,8 @@
 
 .header__button__image_first
 {
-	width: 11px;
-	height: 13px;
+	width: 8px;
+	height: 9px;
 	background: url('photo/person.png') no-repeat;
     background-size: cover;
 }
@@ -69,8 +70,8 @@
 
 .header__button__image_second
 {
-	width: 13px;
-	height: 13px;
+	width: 9px;
+	height: 9px;
 	background: url('photo/heart.png') no-repeat;
     background-size: cover;
 }
@@ -83,8 +84,8 @@
 
 .header__button__image_third
 {
-	width: 13px;
-	height: 11px;
+	width: 9px;
+	height: 8px;
 	background: url('photo/film.png') no-repeat;
     background-size: cover;
 }
@@ -102,7 +103,8 @@
 
     width: 100vw;
     height: 20.8vw;
-    max-height: 400px;
+    max-height: 500px;
+    max-width: 1920px;
     min-height: 100px;
     
     z-index: -1;
@@ -139,22 +141,21 @@
 {
 	content: " ";
 	display: inline-block;
-	width: 20px;
+	width: 40px;
 	height: 1px;
 	background: #c4c4c4;
 	border-radius: 10px;
-	margin: 0 0 12px 31px;
+	margin: 0 0 12px 10px;
 }
 
 .section-title:before
 {
 	content: " ";
 	display: inline-block;
-	width: 20px;
+	width: 40px;
 	height: 1px;
 	background: #c4c4c4;
-	margin-right: 31px;
-	margin: 0 31px 12px 0;
+	margin: 0 10px 12px 0;
 }
 
 .sub-title
@@ -333,7 +334,7 @@
 .sub-content
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 54px;
 }
@@ -392,11 +393,11 @@
 .main-form__input-field
 {
     width: 66vw;
-    height: 9vw;
+    height: 8vw;
     border: solid 2px #c9c9c9;
     border-radius: 2px;
 	margin: 6px 0 26px 0;
-	font: 10px 'Open Sans', sans-serif;
+	font: 12px 'Open Sans', sans-serif;
     text-indent: 17px;
     color: #555;
 }
@@ -414,7 +415,7 @@
     border: solid 2px #a6a6a6;
     border-radius: 2px;
 	margin: 5px 0 43px 0;
-	font: 10px 'Open Sans', sans-serif;
+	font: 12px 'Open Sans', sans-serif;
     padding-left: 17px;
     color: #555;
     -webkit-appearance: none;
@@ -474,11 +475,11 @@
 .main-form__input-field_message
 {
     width: 66vw;
-    height: 30vw;
+    height: 25vw;
     border: solid 2px #a6a6a6;
     border-radius: 2px;
 	margin: 6px 0 26px 0 ;
-	font: 10px 'Open Sans', sans-serif;
+	font: 12px 'Open Sans', sans-serif;
     text-indent: 17px;
     color: #555;
 }
@@ -532,25 +533,817 @@
     {
         width: 130px;
     }
+
     .nametage-title
     {
         font-size: 12px;
+    }
+
+    .header
+    {
+        width: 65%;
+    }
+
+    .header__button
+    {  
+        font-size: 8px;
+    }
+
+    .header__button__image_first
+    {
+        width: 8px;
+        height: 9px;
+    }
+    
+    .header__button__image_second
+    {
+        width: 9px;
+        height: 9px;
+    }
+
+    .header__button__image_third
+    {
+        width: 9px;
+        height: 8px;
+    }
+
+    .sub-content
+    {
+        justify-content: space-between;
     }
 }
    
 
 @media screen and (min-width: 768px)
 {
-     .info-lists__element
-     {
-         font-size: 24px;
-     }
+    .header
+    {
+        width: 50%;
+    }
+
      .header__button
-     {
-         font-size: 20px;
-     }
-     .sub-content__block__text
-     {
-         font-size: 19px;
-     }
+    {  
+        font-size: 9px;
+    }
+
+    .header__button__image_first
+    {
+        width: 9px;
+        height: 10px;
+    }
+
+    .header__button__image_second
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    .header__button__image_third
+    {
+        width: 10px;
+        height: 9px;
+    }
+
+    .photo-container
+    {
+        width: 20vw;
+        height: 23vw;
+    }
+
+    .main
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: -12vw; 
+
+        height: auto;
+        width: 60%;
+    }
+
+    .left-container
+    {
+        align-items: flex-start;
+        width: 33%;
+        height: inherit;
+    }
+
+    .photo-container
+    {
+        width: 100%;
+        height: 24vw;
+    }
+
+    .info-lists
+    {
+        flex-direction: column;
+        margin: 20px 0 0 -18px;
+    }
+
+    .info-lists__element
+    {
+        line-height: 18px;
+    }
+    
+    .quote
+    {
+        color: white;
+    }
+
+    .quote__content
+    {
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .quote__owner
+    {
+        font-size: 8px;
+    }
+
+    .text-container
+    {
+        margin-top: -200px;
+        font: 300 12px 'Georgia', serif;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .main-title:after
+    {
+        width: 30px;
+        height: 3px;
+        margin-top: 15px;
+    }
+
+    .sub-content
+    {
+        margin: 0 30px;
+    }
+
+    .sub-content__block
+    {
+        width: 180px;
+    }
+
+    .nametage-title
+    {
+        font-size: 16px;
+    }
+
+    .sub-content__block__text
+    {
+        font-size: 11px;
+    }
+
+    .sub-content__button
+    {
+        width: 120px;
+        height: 35px;
+    }
+
+    .sub-content__button__text
+    {
+        font-size: 12px
+    }
+
+    .section-title
+    {
+        font-size: 23px;
+    }
+
+    .section-title:after
+    {
+        width: 80px;
+    }
+
+    .section-title:before
+    {
+        width: 80px;
+    }
+
+    .main-form
+    {
+        width: 50%;
+    }
+
+    .main-form__input-field
+    {
+        width: 100%;
+        height: auto;
+        font-size: 13px;
+        line-height: 40px;
+    }
+
+    .main-form__input-field_message
+    {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .main-form__list
+    {
+        width: 102%;
+        height: auto;
+        font-size: 13px;
+        padding-left: 17px;
+        line-height: 40px;
+    }
+
+    .main-form__button
+    {
+        width: 130px;
+        height: 35px;
+        font-size: 14px; 
+    }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    .header__button
+    {  
+        font-size: 10px;
+    }
+
+    .info-lists__title
+    {
+        font-size: 16px;
+    }
+
+    .info-lists__element
+    {
+        line-height: 19px;
+        font-size: 14px;
+    }
+
+    .quote__content
+    {
+        font-size: 20px;
+        line-height: 17px;
+    }
+
+    .quote__owner
+    {
+        font-size: 9px;
+    }
+
+    .text-container
+    {
+        margin-top: -200px;
+        font: 300 14px 'Georgia', serif;
+
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-title
+    {
+        font-size: 27px;
+    }
+
+    .main-title:after
+    {
+        width: 40px;
+        height: 4px;
+        margin-top: 15px;
+    }
+
+    .sub-container
+    {
+        width: 70%;
+    }
+
+    .sub-content
+    {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .sub-content__block
+    {
+        width: 170px;
+    }
+
+    .sub-title
+    {
+        font-size: 23px;
+    }
+
+    .nametage-title
+    {
+        font-size: 16px;
+    }
+
+    .sub-content__block__text
+    {
+        font-size: 12px;
+    }
+
+    .sub-content__button
+    {
+        width: 140px;
+        height: 40px;
+    }
+
+    .sub-content__button__text
+    {
+        font-size: 14px
+    }
+
+    .section-title
+    {
+        font-size: 27px;
+    }
+
+    .section-title:after
+    {
+        width: 120px;
+    }
+
+    .section-title:before
+    {
+        width: 120px;
+    }
+
+    .main-form__input-field
+    {
+        font-size: 15px;
+        line-height: 45px;
+    }
+
+    .main-form__input-field_message
+    {
+        font-size: 15px;
+    }
+
+    .main-form__list
+    {
+        font-size: 15px;
+        line-height: 45px;
+    }
+
+    .main-form__label
+    {
+        font-size: 18px;
+    }
+
+    .main-form__label_list
+    {
+        font-size: 18px;
+    }
+
+    .main-form__radio__text
+    {
+        font-size: 15px;
+    }
+
+    .main-form__button
+    {
+        width: 150px;
+        height: 40px;
+        font-size: 15px; 
+    }
+
+    .footer__text
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1440px) 
+{
+    .header
+    {
+        width: 50%;
+    }
+    
+    .header__button
+    {
+        font-size: 17px;
+        font-weight: normal;
+        padding: 0 21px;
+        text-indent: 10px;
+    }
+
+    .photo-container
+    {
+        width: 100%;
+        height: 350px;
+    }
+
+    .header__button__text
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header__button__image_first
+    {
+        width: 12px;
+        height: 14px;
+    }
+
+    .header__button__image_second
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+    .header__button__image_third
+    {
+        width: 14px;
+        height: 12px;
+    } 
+
+    .info-lists__title
+    {
+        font-size: 23px;
+    }
+
+    .info-lists__element
+    {
+        line-height: 30px;
+        font-size: 18px
+    }
+
+    .quote__content
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .quote__owner
+    {
+        font-size: 13px;
+    }
+
+    .text-container
+    {
+        margin-top: -120px;
+        font-size: 18px;
+    }
+    .text-container__text
+    {
+        line-height: 30px;
+    }
+    
+    .text-container__text_sub
+    {
+        line-height: 30px;
+    }
+
+    .main-title 
+    {
+        font-size: 44px;
+    }
+
+    .main-title:after
+    {
+        width: 60px;
+        height: 6px;
+        margin-top: 20px;
+    }
+
+    .section-title
+    {
+        font-size: 33px;
+    }
+
+    .section-title:after
+    {
+        width: 200px;
+        height: 1px;
+    }
+
+    .section-title:before
+    {
+        width: 200px;
+        height: 1px;
+    }
+
+    .sub-title
+    {
+        font-size: 33px;
+    }
+
+    .nametage-title
+    {
+        font-size: 20px;
+    }
+
+    .sub-container
+    {
+        width: 70%; /*1200px 60p*/
+    }
+
+    .sub-content__block
+    {
+        width: 240px;
+        margin: 0;
+    }
+
+    .sub-content__block__text
+    {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .sub-content__button
+    {
+        width: 220px;
+        height: 50px;
+    }    
+    
+    .sub-content__button__text
+    {
+        font-size: 18px;
+    }
+
+    .main-form
+    {
+        width: 540px;
+        margin-top: 67px;
+    }
+
+    .main-form__input-field
+    {
+        width: 532px;
+        height: 44px;
+        font-size: 18px;
+        text-indent: 17px;
+    }
+
+    .main-form__list
+    {
+        width: 540px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .main-form__label_list
+    {
+        font: normal 20px/30px 'Open Sans', sans-serif;
+    }
+
+    .main-for__list__option
+    {
+        font-size: 18px;
+    }
+
+    .main-form__label
+    {   
+        font-size: 20px;
+    }
+
+    .main-form__radio__text
+    {
+        font-size: 18px;
+    }
+
+    .main-form__input-field_message
+    {
+        width: 532px;
+        height: 144px;
+        font-size: 18px;
+    }
+
+    .main-form__button
+    {
+        width: 220px;
+        height: 50px;
+        font-size: 19px;
+    }
+
+    .footer
+    {
+        margin: 57px 0 0 -20px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) 
+{
+    .header__button
+    {
+        font-size: 19px;
+        line-height: 14px;
+    }
+
+    .main
+    {
+        margin-top: -191px;
+        width: 960px;
+    }
+
+    .header__button__image_first
+    {
+        width: 14px;
+        height: 16px;
+    }
+
+    .header__button__image_second
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header__button__image_third
+    {
+        width: 16px;
+        height: 14px;
+    } 
+
+    .left-container
+    {
+        width: 330px;
+    }
+    
+    .photo-container
+    {
+        width: 330px;
+    }
+
+    .info-lists__title
+    {
+        font-size: 24px;
+        margin-left: -9px;
+    }
+
+    .info-lists__element
+    {
+        line-height: 36px;
+        font-size: 19px
+    }
+    
+    .right-container
+    {
+        margin: -1px 0 0 60px;
+    }
+
+    .quote__content
+    {
+        font-size: 28px;
+        line-height: 42px;
+        margin: 28px 40px;
+    }
+
+    .quote__owner
+    {
+        font-size: 16px;
+    }
+
+    .text-container
+    {
+        margin-top: -109px;
+        font-size: 19px;
+    }
+    .text-container__text
+    {
+        line-height: 32px;
+    }
+    
+    .text-container__text_sub
+    {
+        line-height: 32px;
+    }
+
+    .main-title 
+    {
+        font-size: 48px;
+    }
+
+    .main-title:after
+    {
+        width: 60px;
+        height: 6px;
+        margin-top: 20px;
+    }
+
+    .section-title
+    {
+        font-size: 36px;
+    }
+
+    .section-title:after
+    {
+        width: 200px;
+        height: 1px;
+    }
+
+    .section-title:before
+    {
+        width: 200px;
+        height: 1px;
+    }
+
+    .sub-title
+    {
+        font-size: 36px;
+    }
+
+    .nametage-title
+    {
+        font-size: 22px;
+        margin-top: 59px;
+    }
+
+    .sub-container
+    {
+        margin-top: 47px;
+        width: 1200px;
+    }
+
+    .sub-content__block
+    {
+        width: 285px;
+        margin-top: 25px;
+    }
+
+    .sub-content__block__text
+    {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .sub-content__button
+    {
+        width: 220px;
+        height: 50px;
+        margin: 150px 0 0 -20px;
+    }    
+    
+    .sub-content__button__text
+    {
+        font-size: 19px;
+    }
+
+    .main-form
+    {
+        width: 540px;
+        margin-top: 67px;
+    }
+
+    .main-form__input-field
+    {
+        width: 532px;
+        height: 44px;
+        font-size: 18px;
+        text-indent: 17px;
+    }
+
+    .main-form__list
+    {
+        width: 540px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .main-form__label_list
+    {
+        font: normal 20px/30px 'Open Sans', sans-serif;
+    }
+
+    .main-for__list__option
+    {
+        font-size: 18px;
+    }
+
+    .main-form__label
+    {   
+        font-size: 20px;
+    }
+
+    .main-form__radio__text
+    {
+        font-size: 18px;
+    }
+
+    .main-form__input-field_message
+    {
+        width: 532px;
+        height: 144px;
+        font-size: 18px;
+    }
+
+    .main-form__button
+    {
+        width: 220px;
+        height: 50px;
+        font-size: 19px;
+        margin-top: 5px;
+    }
+
+    .footer
+    {
+        margin: 59px 0 0 -20px;
+    }
+
+    .footer__text
+    {
+        font-size: 16px;
+    }
 }
